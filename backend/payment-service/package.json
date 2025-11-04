@@ -1,0 +1,38 @@
+{
+  "name": "@marketplace/payment-service",
+  "version": "1.0.0",
+  "description": "Payment processing and escrow microservice",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "@prisma/client": "^5.7.0",
+    "stripe": "^14.7.0",
+    "paypal-rest-sdk": "^1.8.1",
+    "square": "^33.1.0",
+    "web3": "^4.3.0",
+    "ethers": "^6.9.0",
+    "joi": "^17.11.0",
+    "helmet": "^7.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "winston": "^3.11.0",
+    "redis": "^4.6.11",
+    "amqplib": "^0.10.3",
+    "uuid": "^9.0.1",
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.5",
+    "@types/paypal-rest-sdk": "^1.7.9",
+    "typescript": "^5.3.3",
+    "ts-node-dev": "^2.0.0",
+    "prisma": "^5.7.0"
+  }
+}
